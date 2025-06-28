@@ -20,12 +20,14 @@ Applied the namespace.yaml to create the namespace "skilltest"
 
 The 3 services and 3 pods are created
 
-![alt text](output/kubectl_pods_service.png)
+![alt text](output/cmd_output.png)
 
 Used the node port to run in the MAC for the 3 services and got the below output
 
 ### **User Service**
 - **Base URL:** `http://localhost:3000`
+- **Ingress URL:** `http://minikube.local/user/`
+
 - **Endpoints:**
   - **List Users:**  
     ```
@@ -33,8 +35,10 @@ Used the node port to run in the MAC for the 3 services and got the below output
     ```
     Or open in your browser: [http://localhost:3000/users](http://localhost:3000/users)
 
-  - **Output**
+  - **Output - Basic**
+  ![alt text](output/user_output_1.png)
 
+  - **Output - Ingress**
   ![alt text](output/user_output.png)
 
 
@@ -42,6 +46,8 @@ Used the node port to run in the MAC for the 3 services and got the below output
 
 ### **Product Service**
 - **Base URL:** `http://localhost:3001`
+- **Ingress URL:** `http://minikube.local/product/`
+
 - **Endpoints:**
   - **List Products:**  
     ```
@@ -49,13 +55,17 @@ Used the node port to run in the MAC for the 3 services and got the below output
     ```
     Or open in your browser: [http://localhost:3001/products](http://localhost:3001/products)
 
-  - **Output**
+  - **Output - Basic**
+  ![alt text](output/product_output_1.png)
+
+  - **Output - Ingress**
   ![alt text](output/product_output.png)
 
 ---
 
 ### **Order Service**
 - **Base URL:** `http://localhost:3002`
+- **Ingress URL:** `http://minikube.local/order/`
 - **Endpoints:**
   - **List Orders:**  
     ```
@@ -63,7 +73,11 @@ Used the node port to run in the MAC for the 3 services and got the below output
     ```
     Or open in your browser: [http://localhost:3002/orders](http://localhost:3002/orders)
 
-  - **Output**
+  - **Output - Basic**
+  ![alt text](output/order_output_1.png)
+
+  - **Output - Ingress**
   ![alt text](output/order_output.png)
+
 
 
